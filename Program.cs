@@ -42,9 +42,9 @@ namespace InventoryManagementSystem
             // =========================================================
 
             var connectionString = builder.Configuration
-                .GetConnectionString("InventoryDbContext")
+                .GetConnectionString("Azurecon")
                 ?? throw new InvalidOperationException(
-                    "Connection string 'InventoryDbContext' not found.");
+                    "Connection string 'Azurecon' not found.");
 
             // =========================================================
             // REGISTER DB CONTEXT
